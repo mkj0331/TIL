@@ -103,6 +103,12 @@ merge 명령어 : `git merge <병합시키고자 하는 브랜치 이름>`
 - 내가 push하고자 하는 폴더의 경로로 설정된 상태에서 git init하기
   - 그러고 나서 push하면, 해당 폴더(하위 폴더 포함)가 push됨 
 
+- git push 과정
+    - 집에서 git pull이 아니라 clone으로 가져오는 경우
+        - git clone으로 github의 파일 가져오기
+        - 해당 파일에 집에서 필기나 파일 추가
+        - 해당 파일의 경로에서 add commit push
+
 - push가 안되는 경우 점검 사항
   - 우선 pull 먼저 하고 push 해보기
   - 현재 나의 경로 점검
