@@ -107,6 +107,9 @@ merge 명령어 : `git merge <병합시키고자 하는 브랜치 이름>`
   - 우선 pull 먼저 하고 push 해보기
   - 현재 나의 경로 점검
   - `git status`, `git remote -v` 점검
+  - `git pull --rebase` 후 push.
+  - 내 컴퓨터 ~/Desktop/TIL 경로가 Git 저장소 루트 맞아야 하나?	-> ✅ 맞아야 해. 그래야 저장소 전체를 pull/push할 수 있어
+    - 저장소 루트 확인 방법 : `git rev-parse --show-toplevel`
 
 - 원래 나의 파일에, 강사님의 파일을 **복붙**으로 옮기고 그 파일을 업로드(push) 하자
   - 강사님의 파일을 업로드 할 권한은 없음 + 강사님 파일을 수정할 권한도 없음 -> 강사님 파일을 내 파일로 복붙하고, 내 파일에서 수정 진행하기
@@ -118,7 +121,7 @@ merge 명령어 : `git merge <병합시키고자 하는 브랜치 이름>`
 ```
 
 
-```
+```markdown
 ## 오답노트
 - 오류 상황
     - 강의실 컴퓨터에서 작업 → GitHub에 push
@@ -134,6 +137,6 @@ merge 명령어 : `git merge <병합시키고자 하는 브랜치 이름>`
                 - git add .
                 - git commit
                 - git push origin master
-                
+```                
 
 
