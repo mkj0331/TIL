@@ -116,3 +116,24 @@ merge 명령어 : `git merge <병합시키고자 하는 브랜치 이름>`
 - push는 안되고, pull은 되는 경우도 존재
   - push는 원격 저장소에 미는거, pull은 원격 저장소에서 내 로컬 저장소로 가져오는 것
 ```
+
+
+```
+## 오답노트
+- 오류 상황
+    - 강의실 컴퓨터에서 작업 → GitHub에 push
+    - 집에서 clone → 추가 작업 → git push --force로 GitHub 덮어쓰기
+    - 오늘 강의실에서 git pull 시 fatal: refusing to merge unrelated histories 오류 발생
+        - 집에서 `--force push`로 기존 github 히스토리를 강제로 덮어써서 로컬 저장소와 원격 저장소의 커밋 히스토리가 달라져서 생긴 오류
+    - 해결 방법1 : 강의실 작업 버리기 (덮어쓰기)
+        - git fetch --all
+        - git reset --hard origin/master
+    - 해결 방법2 : 강의실 작업도 살리고 병합하기
+        - git pull origin master --allow-unrelated-histories
+            - 위 코드에서 충돌이 발생한 경우
+                - git add .
+                - git commit
+                - git push origin master
+                
+
+
