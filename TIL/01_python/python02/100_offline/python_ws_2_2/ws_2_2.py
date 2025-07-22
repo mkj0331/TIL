@@ -31,9 +31,9 @@ class MovieTheater:
         print(f"총 좌석 수: {self.total_seats}")
         print(f"예약된 좌석 수: {self.reserved_seats}")
 
-Theater1 = MovieTheater("메가박스", 100)
+Theater = MovieTheater("메가박스", 100)
 
-Theater1.reserve_seat()
-Theater1.reserve_seat()
-Theater1.reserve_seat()
-Theater1.current_status()
+Theater.reserve_seat()
+Theater.reserve_seat()
+Theater.reserve_seat()
+Theater.current_status()
