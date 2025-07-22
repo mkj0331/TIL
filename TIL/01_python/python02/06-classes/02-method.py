@@ -22,6 +22,7 @@ class Person:
 person1 = Person('iu')
 person2 = Person('BTS')
 
+Person.number_of_population() # 인구수는 2입니다.
 
 
 # 정적 메서드
