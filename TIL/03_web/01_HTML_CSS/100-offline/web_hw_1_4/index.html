@@ -1,0 +1,24 @@
+<!-- img 태그와 a 태그를 활용한다.
+ssafy로고 이미지를 클릭하면 https://www.ssafy.com/으로 이동하도록 코드를 작성한다.
+이미지가 제대로 출력되지 않을 때는 ssafy_logo 문자열이 출력 되도록 작성한다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- 1. 이미지가 보여야 함 -->
+  <!-- 2. 이미지를 클릭하면 ssafy.com으로 이동하는 링크여야함 -->
+  <!-- 3. 이미지 주소가 잘못되면 '대체 문구'가 보여야 함 -->
+  <!-- src 속성에는 경로를 작성해서 적절한 이미지가 보이게 할 수 있다
+  여기서 말하는 경로란, 파일 경로 뿐만 아니라, 웹 URL도 가능하다. 상대경로, 절대경로 모두 가능 -->
+  <!-- alt : 모종의 사유로 이미지가 불러와지지 않을 경우 이를 대신할 문구 작성 -->
+  <!-- href 속성에 경로를 작성한다 / 링크라고 하더라도 파일경로 사용 가능 -->
+  <a href="https://www.ssafy.com">
+    <img src="ssafy_logo.png" alt="ssafy_logo">
+  </a>
+</body>
+</html>
+
