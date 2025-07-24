@@ -14,9 +14,13 @@
       background-color: yellow;
     }
 
-    .content-box {}
+    .content-box {
+      /* box-sizing은 디폴트가 content-box*/
+    }
 
-    .border-box {}
+    * {
+      box-sizing: border-box;
+    }
   </style>
 </head>
 
