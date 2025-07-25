@@ -1,5 +1,21 @@
 # 01-pjt
 
+## Problem A
+
+### 구현 과정
+1. TMDB에서 API key를 받고 header 설정 후 requests 모듈을 통해 popular movie 데이터를 가져옴
+2. 최종 답은 빈 리스트로 설정하고, for문과 딕셔너리를 활용해 필요한 정보(id, title, release_date, popularity)를 temp_item 딕셔너리에 입력하고, 최종 답 리스트에 append
+3. with을 통해 답을 CSV로 Export
+
+### 학습한 내용(새로 배운 것)
+- API Key를 발급하여 데이터를 불러오는 방법
+- with을 통한 csv export 실습
+
+### 어려웠던 부분
+- API로 데이터를 불러오는 것이 처음이라 어려웠음
+- 요구하는 데이터 파일을 TMDB 페이지에서 찾는 과정
+
+
 ## Problem B
    
 ### 구현 과정
@@ -19,6 +35,32 @@ detail 항목은 각 영화의 id값을 받으면 그 영화의 자세한 정보
 데이터 확인을 위하여 excel로 파일을 열었더니 파일이 깨지는 현상을 관찰. 이에 따라 column에서 문제가 생기는 현상이 발생함.   
 이에 다른 환경에서도 동일한 문제가 생기는지를 확인하고, 현재 python 내에서 문제가 발생하지 않는다는 것을 확인함. 현재는 이를 액셀 프로그램 내의 문제로 생각하고 있음.
    
+
+
+## Problem D
+
+### 구현 과정
+1. with을 통해 기존 problem_a에서 export한 movie.csv 파일을 읽어옴
+2. 필요한 정보인 movie_id만 추출하여 popular_movie_id에 저장
+3. comprehension을 통해 {'id':num}으로 되어 있는 popular_movie_id를 num만 있는 리스트로 저장
+4. 필요한 데이터가 있는 'credit' API 파일을 불러옴
+5. 최종 답을 넣을 빈 리스트 미리 설정
+6. movie_id를 인자로 받는 함수 생성
+- 배우 정보가 저장되어 있는 'cast'만 가져오고, comprehension(`[x for x in cast_response if x['order'] <= 10]`을 통해 출연 횟수가 10 이하인 배우만 필터링
+- for문과 딕셔너리를 통해 해당 데이터에서 필요한 데이터('cast_id', 'movie_id', 'name', 'character','order')를 temp_item에 입력하고 이를 최종 답에 append
+7. 함수 실행
+8. csv로 export
+
+### 학습한 내용(새로 배운 것)
+- 딕셔너리 데이터를 가져와서 전처리하는 과정에 대해 익숙해짐
+- comprehension에 대한 이해 향상
+- 함수 생성 및 적용에 대한 이해 향상
+
+### 어려웠던 부분
+- 복잡한 딕셔너리 데이터를 분석하고 원하는 데이터만 추출하는 과정이 어려웠음
+- 함수를 정의하는 과정이 어려웠음
+
+
 ## Problem E
    
 ### 구현 과정
