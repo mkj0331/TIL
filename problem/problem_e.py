@@ -25,6 +25,7 @@ data = {k: {} for k in movie_id}
 with open('movie_reviews.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
+        print(row)
         if row['rating'] in data[row['movie_id']].keys():
             data[row['movie_id']][row['rating']] += 1
         else:
