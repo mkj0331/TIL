@@ -58,7 +58,7 @@ def problem_d(movie_id):
             'character': item['character'],
             'order': item['order']
         }
-    ans.append(temp_item)
+        ans.append(temp_item)
 
 # 함수 실행
 for movie_id in popular_movie_id:
