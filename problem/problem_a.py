@@ -35,7 +35,7 @@ for item in response:
         temp_item[key] = item[key]
     problem_a.append(temp_item)
 
-with open('completed_problem_a.csv', 'w', newline='', encoding='utf-8') as file:
+with open('movies.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fields)
     writer.writeheader()
     writer.writerows(problem_a)

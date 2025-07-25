@@ -15,19 +15,31 @@ headers = {
 
 # 영화 상세 데이터 처리 함수
 
-popular_movies = requests.get("https://api.themoviedb.org/3/movie/popular", headers=headers).json()
 id_list = []
-for item in tqdm(popular_movies['results']):
-    id_list.append(item['id'])
+with open('movies.csv', 'r') as file:
+    csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        id_list.append(row['id'])
+
 
 with open('details.csv', 'w') as file:
     fieldnames = ['budget','revenue', 'runtime', 'genres' ]
     csv_writer = csv.DictWriter(file, fieldnames=fieldnames)
-    #for id in tqdm(id_list):
-    #temp_dict = {}
-    details = requests.get("https://api.themoviedb.org/3/tv/968171", headers=headers).json()
-    print(details)
+    csv_writer.writeheader()
+    for id in tqdm(id_list):
+        temp_dict = {}
+        details = requests.get("https://api.themoviedb.org/3/movie/"+id, headers=headers).json()
+        for field in fieldnames:
+            if field == 'genres':
+                genre_str = ''
+                for i in details['genres']:
+                    genre_str = genre_str + i['name'] + " "
+                temp_dict['genres'] = genre_str
+            else:
+                temp_dict[field] = details[field]
+        csv_writer.writerow(temp_dict)
 
+    
 # CSV 파일에서 영화 ID 읽기
 
 # 데이터 수집 및 CSV 파일로 저장
