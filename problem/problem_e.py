@@ -19,11 +19,17 @@ with open('movies.csv', 'r') as file:
         movie_id.append(row['id'])
 
 # 리뷰 정보를 로드하는 함수 (problem_c.py의 결과 활용)
+# data에 movie_id를 key로 갖는 dictionary를 생성. 그 value는 각 rating이 몇 개 들어가 있는지 볼 수 있는 dictionary
 
 data = {k: {} for k in movie_id}
-print(data)
 with open('movie_reviews.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        if row['rating'] in data[row['movie_id']].keys():
+            data[row['movie_id']][row['rating']] += 1
+        else:
+            data[row['movie_id']][row['rating']] = 1
+print(data)
 
 
 # API를 사용하여 영화 평점 정보 가져오기
@@ -38,6 +44,6 @@ for id in movie_id:
 # 데이터 수집 및 CSV 파일로 저장
 with open('movie_ratings.csv', 'w') as file:
     csv_writer = csv.writer(file)
-    csv_writer.writerow(['id', 'average_rating', 'vote_count'])
+    csv_writer.writerow(['id', 'average_rating', 'vote_count', 'rating_distribution'])
     for i in range(len(movie_id)):
-        csv_writer.writerow([movie_id[i], average_rating[i], vote_count[i]])
+        csv_writer.writerow([movie_id[i], average_rating[i], vote_count[i], data[movie_id[i]]])
