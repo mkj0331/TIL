@@ -28,7 +28,7 @@ with open('movies.csv','r',encoding='utf-8') as file :
 # TMDB 사이트에서 리뷰 결과를 가져와서 정제한다.
 with open('movie_reviews.csv','w',newline='',encoding='utf-8') as file :
     fields = ['review_id','movie_id','author','content','rating']
-    writer=csv.DictWriter(file,fields,quotechar='"',quoting=csv.QUOTE_MINIMAL)
+    writer=csv.DictWriter(file,fields,quotechar='"', quoting=csv.QUOTE_ALL)
     writer.writeheader()
 
     # 각 영화 id를 넣어 리뷰 페이지에서 가져오기
@@ -48,6 +48,7 @@ with open('movie_reviews.csv','w',newline='',encoding='utf-8') as file :
                     content = "내용 없음"
                 else :
                     content = content.replace("\n",' ').replace("\r",'').strip()
+                    content = content.replace(",", ";")
                 writer.writerow({
                     'review_id' : review.get('id'),
                     'movie_id' : id,
