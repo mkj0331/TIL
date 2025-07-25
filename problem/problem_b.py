@@ -21,7 +21,6 @@ with open('movies.csv', 'r') as file:
 
 # 영화 상세 데이터 처리 함수
 # 데이터 수집 및 CSV 파일로 저장
-# 
 with open('movie_details.csv', 'w') as file:
     # 요구사항인 예산, 수익, 시간, 장르를 탐색
     fieldnames = ['movie_id', 'budget', 'revenue', 'runtime', 'genres' ]

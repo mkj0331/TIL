@@ -61,15 +61,5 @@ with open('movie_reviews.csv','w',newline='',encoding='utf-8') as file :
 
 
 
-# 영화 ID 리스트를 movies.csv 파일에서 읽어옴
-
-# API 호출 함수
-
-# 리뷰 데이터 처리 함수
-
-# 데이터 수집 및 CSV 파일로 저장
-
-
-
 
 
