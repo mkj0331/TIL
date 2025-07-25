@@ -69,3 +69,7 @@ with open('movie_reviews.csv','w',newline='',encoding='utf-8') as file :
 
 # 데이터 수집 및 CSV 파일로 저장
 
+
+
+
+
