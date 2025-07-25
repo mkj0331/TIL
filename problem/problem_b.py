@@ -36,7 +36,8 @@ with open('movie_details.csv', 'w') as file:
             if field == 'genres':
                 genre_str = ''
                 for i in details['genres']:
-                    genre_str = genre_str + i['name'] + " "
+                    genre_str = genre_str + i['name'] + ", "
+                genre_str = genre_str[:-2]
                 temp_dict['genres'] = genre_str
             elif field != 'movie_id':
                 temp_dict[field] = details[field]
