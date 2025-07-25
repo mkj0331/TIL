@@ -1,5 +1,5 @@
 # TMDB API 키 설정
-API_KEY = 'YOUR_API_KEY'
+API_KEY = '561295c5763e591775f72a3dfd5e9400'
 BASE_URL = ''
 
 # API 호출 함수
