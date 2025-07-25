@@ -35,9 +35,10 @@ for item in response:
         temp_item[key] = item[key]
     problem_a.append(temp_item)
 
-with open('movies.csv', 'w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fields)
-    writer.writeheader()
-    writer.writerows(problem_a)
+print(problem_a)
+# with open('movies.csv', 'w', newline='', encoding='utf-8') as file:
+#     writer = csv.DictWriter(file, fields)
+#     writer.writeheader()
+#     writer.writerows(problem_a)
 
 
