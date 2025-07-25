@@ -1,7 +1,6 @@
 # TMDB API 키 설정
 import requests
 import csv
-from tqdm import tqdm
 
 # API 호출 함수
 
@@ -13,23 +12,27 @@ headers = {
     "Authorization": "bearer " + API_KEY
 }
 
-# 영화 상세 데이터 처리 함수
-
+# CSV 파일에서 영화 ID 읽기
 id_list = []
 with open('movies.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
         id_list.append(row['id'])
 
-
+# 영화 상세 데이터 처리 함수
+# 데이터 수집 및 CSV 파일로 저장
+# 
 with open('details.csv', 'w') as file:
-    fieldnames = ['budget','revenue', 'runtime', 'genres' ]
+    # 요구사항인 예산, 수익, 시간, 장르를 탐색
+    fieldnames = ['budget', 'revenue', 'runtime', 'genres' ]
     csv_writer = csv.DictWriter(file, fieldnames=fieldnames)
     csv_writer.writeheader()
-    for id in tqdm(id_list):
+    # 상세 데이터는 id를 인자로 받으므로, id별로 검색을 할 수밖에 없음. 따라서 각 id별로 requests를 가져와서 처리 예정
+    for id in id_list:
         temp_dict = {}
         details = requests.get("https://api.themoviedb.org/3/movie/"+id, headers=headers).json()
         for field in fieldnames:
+            # 장르 항목의 경우 dict의 list로 반환하므로, 이를 장르 이름을 합쳐서 전달
             if field == 'genres':
                 genre_str = ''
                 for i in details['genres']:
@@ -38,8 +41,3 @@ with open('details.csv', 'w') as file:
             else:
                 temp_dict[field] = details[field]
         csv_writer.writerow(temp_dict)
-
-    
-# CSV 파일에서 영화 ID 읽기
-
-# 데이터 수집 및 CSV 파일로 저장
