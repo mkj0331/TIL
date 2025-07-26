@@ -1,0 +1,39 @@
+.container{
+  height: 2500px;
+}
+
+div{
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+.static-example {
+  background-color: lightgray;
+}
+
+.relative-example{
+  background-color: lightblue;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  /* top/left 값만큼 '자기 자신 기준'으로 이동 */
+}
+
+.absolute-example{
+  background-color: green;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  /* 가장 가까운 position이 설정된 조상 기준으로 위치 */
+}
+
+.sticky-example{
+  background-color: red;
+  position: sticky;
+  top: 0;
+  /* 스크롤 시 지정된 top 값을 만나면 고정 */
+}
