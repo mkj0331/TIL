@@ -14,4 +14,6 @@ queue.append(4)
 queue.append(5)
 
 print(queue)
-queue.append(11)
+queue[-1] = 0
+print(queue)
+# queue.append(11)

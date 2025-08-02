@@ -1,4 +1,4 @@
-class CircularQueue:
+class CircularQueue: # 안쓰긴 함!!! -> deque
     # 원형 큐를 초기화하는 메서드
     def __init__(self, size=5):
         self.size = size  # 큐의 크기

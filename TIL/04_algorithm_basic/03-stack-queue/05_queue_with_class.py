@@ -49,5 +49,5 @@ print(queue.dequeue())
 print(queue.dequeue())
 print(queue.dequeue())
 print(queue.items)
-print(queue.dequeue())
-queue.enqueue(100)
+print(queue.dequeue()) # queue is empty이지만,
+queue.enqueue(100) # rear == capacity-1 이므로 삽입이 안됨
