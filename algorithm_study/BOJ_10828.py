@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 
 def commander(x):
@@ -22,7 +25,7 @@ def commander(x):
 
 stack = []
 for _ in range(N):
-    given = list(input().split())
+    given = input().split()
     if len(given) == 2:
         stack.append(int(given[1]))
     else:
