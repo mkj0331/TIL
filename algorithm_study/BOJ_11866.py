@@ -20,5 +20,5 @@ while people:
     idx = (idx + K - 1) % len(people)
     output.append(people.pop(idx))
 
-res =  ", ".join(map(str, output))
+res = ", ".join(map(str, output))
 print(f"<{res}>")
