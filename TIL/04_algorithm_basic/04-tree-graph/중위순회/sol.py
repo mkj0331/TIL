@@ -1,9 +1,7 @@
 import sys
 sys.stdin = open("input.txt")
 
-# 완전 이진 트리 형식 -> 자식의 정점 번호가 입력으로 필요한가? 입력은 받지만 쓸 일은 없음
-
-# 중위 순회
+# 중위 순회 함수
 def inorder_traversal(idx):
     # 순회 대상이 범위를 벗어나지 않았다면
     if idx <= N:
@@ -35,17 +33,15 @@ for t in range(1, 11): # 테스트 케이스 10개
     # 자식 개수가 1개인 정점
     for _ in range(child1_cnt):
         node_num, node_val, child1_num = input().split()
-        node_num, child1_num = map(int, [node_num, child1_num])
+        node_num, child1_num = map(int, [node_num, child1_num]) # 문자열이 아닌 변수 int 적용
         tree[node_num] = node_val
 
     # 자식 개수가 0개인 정점
     for _ in range(child0_cnt):
         node_num, node_val = input().split()
-        node_num = int(node_num)
+        node_num = int(node_num) # 문자열이 아닌 변수에 int 적용
         tree[node_num] = node_val
 
     print(f"#{t}", end=' ')
     inorder_traversal(1)
     print() # 다음 테스트 케이스 가기 전에 줄바꿈
-
-

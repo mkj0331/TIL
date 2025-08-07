@@ -21,9 +21,9 @@ def dfs(idx, total):
             min_height = min(min_height, total)
         return
     # 아직 모든 점원에 대해서 탐색하지 않았으므로,
-    dfs(idx+1, total + arr[idx])
+    dfs(idx+1, total + arr[idx]) #idx의 키를 total에 더하기로 결정했을 때의 dfs
     # 이번 점원의 키는 더하지 않는다.
-    dfs(idx+1, total)
+    dfs(idx+1, total) #idx의 키를 total에 더하지 않기로 결정했을 때의 dfs
 
 
 T = int(input())
