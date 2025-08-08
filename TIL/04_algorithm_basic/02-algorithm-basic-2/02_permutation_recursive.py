@@ -13,7 +13,7 @@ def perm(selected, remain):
         for idx in range(len(remain)):      # 그 요소를 모두 순회하면서
             # idx 번째의 요소를 선택
             select_item = remain[idx]
-            # 선택된 idx번째를 제외한 reamin을 만들자. (진짜 나머지 리스트)
+            # 선택된 idx번째를 제외한 remain을 만들자. (진짜 나머지 리스트)
             remain_list = remain[:idx] + remain[idx+1:]
             perm(selected + [select_item], remain_list)
 

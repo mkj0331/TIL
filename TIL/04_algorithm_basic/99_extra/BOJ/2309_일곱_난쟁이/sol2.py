@@ -1,6 +1,9 @@
 import sys
 sys.stdin = open('input.txt')
 
+def search()
+
+
 
 def search(n, cnt, result):
     if cnt > 100:
