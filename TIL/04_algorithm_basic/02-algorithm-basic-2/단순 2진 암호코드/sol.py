@@ -12,16 +12,19 @@ for t in range(1, T+1):
         if '1' in row:
             row_with_pw = row
             break
+    # print(row_with_pw)
 
     # 그 row에서 암호코드만 추출
     finish_index = row_with_pw.rfind('1') + 1
     start_index = finish_index-56
     pw_code = row_with_pw[start_index:finish_index]
+    # print(pw_code)
 
     # 해당 암호코드를 7개의 비트로 이루어진 8개의 원소로 분리
     code_nums = []
     for i in range(0, len(pw_code), 7):
         code_nums.append(pw_code[i:i+7])
+    # print(code_nums)
 
     # 그림에 주어진 암호화 규칙
     rule = {
@@ -41,6 +44,7 @@ for t in range(1, T+1):
     final_code_nums = []
     for val in code_nums:
         final_code_nums.append(rule[val])
+    # print(final_code_nums)
 
     # 홀수번째 숫자
     hol = final_code_nums[0:7:2]
