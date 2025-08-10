@@ -19,9 +19,13 @@ def depth_first_saerch(vertex):
         # 인접 행렬에서, 내 번호 (내가 진출 가능한 후보군)
             # 내가 진출 가능한 idx인지 확인하고,
             # 그 idx번째가 이전에 방문한적이 있는지 확인 (방문한적 없다면)
+        if False not in visited:
+            break
+        
         if adj_matrix[vertex][idx] and visited[idx] == False:
             # 다음 후보군을 방문한다.
             depth_first_saerch(idx)
+
         # if candidate:
         #     depth_first_saerch()
 
@@ -45,6 +49,10 @@ adj_matrix = [
     [0, 0, 0, 0, 0, 1, 0],  # G
 ]
 
+
 # 시작 정점을 0번인 A부터 시작
 depth_first_saerch(0)
 print(visited)
+
+
+

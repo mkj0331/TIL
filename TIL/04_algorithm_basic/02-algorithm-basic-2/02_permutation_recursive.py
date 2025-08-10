@@ -21,3 +21,5 @@ def perm(selected, remain):
 res = []
 perm([], [1, 2, 3, 6])
 print(res)
+
+
