@@ -1,5 +1,4 @@
 ## 전치리를 통한 todos와 users 분리
-
 import csv
 
 # 파일 경로 설정

@@ -51,9 +51,9 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-# REST_AUTH = {
-#     'REGISTER_SERIALIZER': 'accounts.serializers.CustomRegisterSerializer',
-# }
+REST_AUTH = {
+    'REGISTER_SERIALIZER': 'accounts.serializers.CustomUserRegisterSerializer',
+}
 
 
 MIDDLEWARE = [
@@ -113,7 +113,7 @@ DATABASES = {
 }
 
 # local 에서만 이메일 전송 관련 내역 출력
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Password validation
