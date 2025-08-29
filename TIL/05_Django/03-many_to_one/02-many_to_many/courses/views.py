@@ -49,4 +49,4 @@ def assistant(request, course_pk, teacher_pk):
     else: # 부강사로 지정되어 있지 않은 경우
         course.assistant_teachers.add(teacher) # 해당 강좌의 부강사로 지정
     return Response(CourseSerializer(course).data, status=status.HTTP_200_OK)
-    ## M:N 관계에서 우리가 사용하는건 remove랑 add만 주로 씀
+    

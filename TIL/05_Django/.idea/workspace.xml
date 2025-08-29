@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e43c36e9-ccf7-4396-af36-85e4dd37b7a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/Django/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/Django/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/Django/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/Django/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/Django/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/posts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_model_serializer/100-offline/django_hw_2_2/result/result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/migrations/0002_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/migrations/0002_comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/articles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/01-many_to_one/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/migrations/0002_course_assistant_teachers.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/migrations/0002_course_assistant_teachers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-many_to_one/02-many_to_many/courses/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/authors/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/books/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/libraries/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/libraries/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/libraries/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/libraries/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/libraries/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-many_to_one/hw_02/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/Django/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/Django/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/Django/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/Django/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/Django/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/result/result01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_hw_4_2/result/result02.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="31oECMWHZNhaokRMHxDQoESohpx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../06_algorithm_adv/04-dp" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e43c36e9-ccf7-4396-af36-85e4dd37b7a4" name="Default Changelist" comment="" />
+      <created>1756181896820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756181896820</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

@@ -1,5 +1,22 @@
 from collections import deque
 
+def BFS(rt):
+    visited = set()
+    res = []
+
+    queue = deque([rt])
+    visited.add(rt)
+
+    while queue:
+        node = queue.popleft()
+        res.append(node)
+
+        for neighbor in graph.get(node, []):
+            if neighbor in visited: continue
+            queue.append(neighbor)
+            visited.add(neighbor)
+
+
 def BFS(start_vertex):
     # 해당 정점 방문 여부를 표시할 배열이 하나 필요
     # visited = [0] * len(nodes)

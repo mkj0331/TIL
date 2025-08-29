@@ -33,3 +33,17 @@ graph = {
 
 start_node = 'A'
 print(BFS(start_node))
+
+
+def bfs(rt):
+    res = []
+
+    data_structure = [rt]
+
+    while data_structure:
+        node = data_structure.pop(0)
+        res.append(node)
+
+        for child in graph.get(node, []):
+            data_structure.append(child)
+    return res
