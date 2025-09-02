@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <div id="app">
+    <h1>다양한 전시 정보</h1>
+
+    <!-- 3) 체크박스 ↔ isActive 양방향 바인딩 -->
+    <label for="isActive">전시 중인 정보만 보기</label>
+    <input id="isActive" type="checkbox" v-model="isActive">
+
+    <!-- 5) 리스트 렌더링 -->
+    <ul>
+      <li v-for="ex in (isActive ? isActiveExhibition : exhibitions)" :key="ex.title">
+        <h3>{{ ex.title }}</h3>
+        <hr>
+        <p>{{ ex.place }}</p>
+        <p>가격 : {{ ex.price.toLocaleString('ko-KR') }}원</p>
+        <hr>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          exhibitions: [
+            { title: '무라카미 다카시 : 무라카시좀비', place: '부산 시립 미술관',   price: 1000,  active: true  },
+            { title: '마우라치오 카텔란 개인전',      place: '리움 미술관',       price: 30000, active: true  },
+            { title: '조선백자전',                    place: '리움 미술관',       price: 30000, active: true  },
+            { title: '한국 실험미술 1960 - 1970',     place: '국립현대미술관',     price: 0,     active: true  },
+            { title: '에드워드 호퍼 : 길 위에서',     place: '서울 시립 미술관',   price: 1000,  active: false },
+            { title: '알렉산더 칼더 x 이우환',        place: '국제갤러리 서울점',   price: 15000, active: false },
+          ],
+          isActive: false,
+        };
+      },
+      computed: {
+        // 2) 전시 중만 필터링
+        isActiveExhibition() {
+          return this.exhibitions.filter(ex => ex.active);
+        },
+      },
+    }).mount('#app');
+  </script>
+</body>
+</html>
