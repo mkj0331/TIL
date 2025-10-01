@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/TIL/10-DataScience_Adv/6_c_mlflow/100-offline/data_science2_ws_6_2/mlruns/547463704624706629/4312d05414984e1289cb41a989e6a8f2/artifacts
+end_time: 1759292793101
+entry_point_name: ''
+experiment_id: '547463704624706629'
+lifecycle_stage: active
+run_id: 4312d05414984e1289cb41a989e6a8f2
+run_name: agreeable-shoat-416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759292793077
+status: 3
+tags: []
+user_id: SSAFY

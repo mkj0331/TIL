@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/TIL/10-DataScience_Adv/6_c_mlflow/100-offline/data_science2_ws_6_2/mlruns/547463704624706629/bbdfa414513c491b81339cfc11b07d71/artifacts
+end_time: 1759292793132
+entry_point_name: ''
+experiment_id: '547463704624706629'
+lifecycle_stage: active
+run_id: bbdfa414513c491b81339cfc11b07d71
+run_name: painted-mole-80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759292793104
+status: 3
+tags: []
+user_id: SSAFY
