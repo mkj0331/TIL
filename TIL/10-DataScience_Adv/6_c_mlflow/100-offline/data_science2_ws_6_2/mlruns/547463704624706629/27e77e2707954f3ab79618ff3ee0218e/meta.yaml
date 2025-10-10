@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/TIL/10-DataScience_Adv/6_c_mlflow/100-offline/data_science2_ws_6_2/mlruns/547463704624706629/27e77e2707954f3ab79618ff3ee0218e/artifacts
+end_time: 1759292793072
+entry_point_name: ''
+experiment_id: '547463704624706629'
+lifecycle_stage: active
+run_id: 27e77e2707954f3ab79618ff3ee0218e
+run_name: polite-snail-596
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759292793034
+status: 3
+tags: []
+user_id: SSAFY

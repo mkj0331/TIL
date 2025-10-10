@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/TIL/10-DataScience_Adv/6_c_mlflow/100-offline/data_science2_ws_6_2/mlruns/547463704624706629/b1d771e3399f4485b9887cc6dbc03a02/artifacts
+end_time: 1759292792999
+entry_point_name: ''
+experiment_id: '547463704624706629'
+lifecycle_stage: active
+run_id: b1d771e3399f4485b9887cc6dbc03a02
+run_name: tasteful-seal-475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759292792965
+status: 3
+tags: []
+user_id: SSAFY

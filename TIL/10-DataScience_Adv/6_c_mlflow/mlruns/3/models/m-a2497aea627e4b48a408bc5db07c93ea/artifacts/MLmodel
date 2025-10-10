@@ -1,0 +1,28 @@
+artifact_path: file:///C:/Users/SSAFY/Desktop/TIL/TIL/10-DataScience_Adv/6_c_mlflow/mlruns/3/models/m-a2497aea627e4b48a408bc5db07c93ea/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.4.0
+model_id: m-a2497aea627e4b48a408bc5db07c93ea
+model_size_bytes: 955
+model_uuid: m-a2497aea627e4b48a408bc5db07c93ea
+prompts: null
+run_id: b3c94d09678b4cb692300052849c2e3a
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 30]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-10-01 05:20:56.348847'
