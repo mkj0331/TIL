@@ -3,12 +3,14 @@
 ## Client & Server
 - Client : 서비스를 **요청**하는 주체 
 - Server : 클라이언트의 요청에 **응답**하는 주체
+
 ![alt text](image.png)
 ## Frontend & Backend
 - Frontend : 사용자 인터페이스(UI)를 구성하고, 사용자가 애플리케이션과 상호작용할 수 있도록 함
   - 예) HTML, CSS, JavaScript, 프론트엔드 프레임워크, ...
 - Backend : 서버 측에서 동작하며, 클라이언트의 요청에 대한 처리와 데이터베이스와의 상호작용 등을 담당 
   - 예) 서버 언어(Python, Java 등) 및 백엔드 프레임워크, 데이터베이스, API, 보안, ...
+
 ![alt text](image-1.png)
 
 ---
@@ -17,6 +19,7 @@
 - Django : **Python** 기반의 대표적인 웹 프레임워크 
 ## 가상환경
 - Python 애플리케이션과 그에 따른 패키지들을 격리하여 관리할 수 있는 **독립적인** 실행 환경
+
 ![alt text](image-2.png)
 ```
 $ python -m venv venv # 가상환경 생성
@@ -41,10 +44,12 @@ $ python manage.py runserver # Django 서버 실행
 $ python manage.py startapp appname # appname이라는 앱 생성(생성 후, settings.py 내에 INSTALLED_APPS에 appname 등록 필수)
 ```
 - 프로젝트 구조
+
 ![alt text](image-4.png)
   - settings.py : 프로젝트의 모든 설정을 관리
   - urls.py : 요청 들어오는 URL에 따라 이에 해당하는 적절한 views를 연결
 - 앱 구조
+
 ![alt text](image-5.png)
   - admin.py : 관리자용 페이지 설정
   - models.py : DB와 관련된 Model을 정의
