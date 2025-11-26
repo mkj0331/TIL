@@ -22,15 +22,15 @@
 
 - PythonOperator with Xcom
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 - BashOperator with Xcom(Jinja template 활용)
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 - Python&BashOperator with Xcom
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ---
 - 전역 공유 변수란?
@@ -41,7 +41,7 @@
 
 - 전역 공유 변수 등록하기 in UI
 
-![alt text](image-3.png) -> ![alt text](image-4.png) -> ![alt text](image-5.png)
+![alt text](images/image-3.png) -> ![alt text](images/image-4.png) -> ![alt text](images/image-5.png)
 
 - 전역 공유 변수 사용하기
   - Variable 라이브러리의 get 함수를 사용하여 값 사용
@@ -51,7 +51,7 @@
   - DAG 실행 단위로 데이터를 유지하고 싶으면 Xcom
   - 여러 DAG에서 공통으로 사용할 데이터는 Variable 사용
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 
@@ -69,11 +69,11 @@
 
 - 조건 기반 실행 흐름
 
-  ![alt text](image-7.png)
+  ![alt text](images/image-7.png)
 
 - API 응답값 기반으로 분기 처리 방식
 
-  ![alt text](image-8.png)
+  ![alt text](images/image-8.png)
 
 ---
 - Trigger Rule
@@ -81,7 +81,7 @@
   - 기본적으로 모든 Upstream Task가 성공해야 실행됨
   - 특정 Task의 실행 결과에 따라 실행 조건을 다르게 설정할 수 있음 
 
-  ![alt text](image-9.png)
+  ![alt text](images/image-9.png)
 
 
 # External Task Sensor
@@ -90,13 +90,13 @@
   - DAG의 복잡성을 줄이고, 비슷한 작업을 하나의 그룹으로 묶어 가독성 및 유지보수성 향상
   - UI에서 그룹별로 Task를 시각적으로 확인 가능 
 
-  ![alt text](image-10.png)
+  ![alt text](images/image-10.png)
 
 - Task Group 활용법 
 
-  ![alt text](image-11.png)
+  ![alt text](images/image-11.png)
 
-![alt text](image-12.png)
+![alt text](images/image-12.png)
 ---
 - ExternalTaskSensor
   - 다른 DAG의 특정 Task가 완료될 때까지 기다리는 센서 오퍼레이터 
@@ -104,14 +104,14 @@
   - 예) DAG A(데이터 적재) -> DAG B(데이터 분석) 
 
 - ExternalTaskSensor 활용법
-  ![alt text](image-13.png)
+  ![alt text](images/image-13.png)
   - DAG B는 DAG A의 task_a가 완료될 때까지 기다렸다가 수행
 
 - Dynamic DAG란?
   - DAG를 정적으로 정의하는 것이 아니라, 실행 시점에 동적으로 생성하는 방식 
   - 여러 개의 비슷한 DAG를 하나의 Python 스크립트에서 생성하여 관리할 수 있음 
 
-  ![alt text](image-14.png)
+  ![alt text](images/image-14.png)
 
 # Airflow Connections 및 Hooks 소개
 - Connection
@@ -121,9 +121,9 @@
   - Connection을 사용하여 실제 데이터를 전송하거나, 외부 시스템과 상호작용하는 역할
   - Operator에서 Hook을 활용하여 작업 수행 
 
-    ![alt text](image-15.png)
+    ![alt text](images/image-15.png)
 
-  ![alt text](image-16.png)
+  ![alt text](images/image-16.png)
 
-  ![alt text](image-17.png)
+  ![alt text](images/image-17.png)
 
